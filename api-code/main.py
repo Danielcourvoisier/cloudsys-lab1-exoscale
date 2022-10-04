@@ -120,7 +120,7 @@ server_instance = exo.compute.create_instance(
                port=SERVER_APP_PORT)
 )
 print(f"Server instance IP: {server_instance.ipv4_address}")
-server_url = f"http://{server_instance.ipv4_address}:{CLIENT_APP_PORT}"
+server_url = f"http://{server_instance.ipv4_address}:{SERVER_APP_PORT}"
 print(server_url)
 
 # create client instance
